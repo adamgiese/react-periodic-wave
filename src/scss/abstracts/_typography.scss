@@ -1,0 +1,13 @@
+//typography variables
+$sans-serif: 'Lato';
+$sans-serif-fallback: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+
+//typography mixins
+@mixin async-font($font, $fallback: sans-serif) {
+  font-family: $fallback;
+
+  .wf-active & {
+    font-family: $font, $fallback;
+  }
+}
