@@ -15,7 +15,7 @@ export default class Overtone extends React.Component {
           defaultValue={this.props.tone} 
           onChange={this.handleChange.bind(this)}
         />
-        <p className='overtone--label'>{this.props.tone}</p>
+        <p className='overtone--label'>{this.props.tone} | {this.props.index + 1}</p>
       </div>
     );
   }
